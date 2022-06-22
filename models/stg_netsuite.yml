@@ -75,7 +75,7 @@ models:
         description: Boolean created by Fivetran to indicate whether the record has been deleted.
 
   - name: stg_netsuite__accounttypes
-    descripting: Table detailing netsuite account types
+    description: Table detailing netsuite account types
     columns:
       - name: accounttype_id
         description: ID for joining to accounts table
@@ -86,7 +86,7 @@ models:
         description: Indicates whether or not account is included in balance sheet
       - name: is_leftside
         description: Indicates whether account is on left side of ledger
-      - type_name:
+      - name: type_name
         description: Longstring format of account type
 
   - name: stg_netsuite__classes
