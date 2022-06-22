@@ -52,6 +52,7 @@ vars:
     transaction_lines_netsuite2: "{{ source('netsuite','transactionline') }}"
     transactions_netsuite2: "{{ source('netsuite','transaction') }}"
     vendors_netsuite2: "{{ source('netsuite','vendor') }}"
+    vendor_types_netsuite2: "{{ source('netsuite','VENDORCATEGORY') }}"
 
     accounts_pass_through_columns: []
     classes_pass_through_columns: []

@@ -556,3 +556,13 @@ sources:
             description: The timestamp of the date the vendor was created.
           - name: _fivetran_deleted
             description: Boolean created by Fivetran to indicate whether the record has been deleted.
+
+      - name: VENDORCATEGORY
+        description: A table detailing all the various types of vendors.
+        columns:
+          - name: ID
+            description: The unique identifier of the vendor type
+          - name: name
+            description: The name of the vendor type.
+          - name: _fivetran_deleted
+            description: Boolean created by Fivetran to indicate whether the record has been deleted.
