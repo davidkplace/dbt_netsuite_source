@@ -16,7 +16,7 @@ final as (
         balancesheet = 'T' as is_balancesheet,
         left = 'T' as is_leftside,
         longname as type_name
-    from fields
+    from base
 )
 
 select * 
