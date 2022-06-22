@@ -81,7 +81,7 @@ models:
         description: ID for joining to accounts table
         tests:
           - unique
-          - not null
+          - not_null
       - name: is_balancesheet
         description: Indicates whether or not account is included in balance sheet
       - name: is_leftside
