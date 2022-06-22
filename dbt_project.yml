@@ -38,6 +38,7 @@ vars:
     accounting_books_netsuite2: "{{ source('netsuite','accountingbook') }}"
     accounting_periods_netsuite2: "{{ source('netsuite','accountingperiod') }}"
     accounts_netsuite2: "{{ source('netsuite','account') }}"
+    accounttypes_netsuite2: "{{ source('netsuite','accounttype') }}"
     classes_netsuite2: "{{ source('netsuite','classification') }}"
     consolidated_exchange_rates_netsuite2: "{{ source('netsuite','consolidatedexchangerate') }}"
     currencies_netsuite2: "{{ source('netsuite','currency') }}"

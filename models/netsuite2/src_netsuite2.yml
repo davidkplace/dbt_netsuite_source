@@ -107,6 +107,20 @@ sources:
           - name: _fivetran_deleted
             description: Boolean created by Fivetran to indicate whether the record has been deleted.
 
+      - name: accounttype
+        description: Detailed features for different types of accounts
+        columns:
+          - name: id
+            description: ID used to join to accounts table
+          - name: internalid
+            description: Primary Key for the table
+          - name: balancesheet
+            description: Boolean value indicating whether account is included in balance sheet
+          - name: LEFT
+            description: Boolean value indicating if account is on the left side of the ledger
+          - name: _fivetran_deleted
+            description: Boolean created by Fivetran to indicate whether the record has been deleted.
+
       - name: classification
         description: Table detailing all classes set up in Netsuite.
         columns:
