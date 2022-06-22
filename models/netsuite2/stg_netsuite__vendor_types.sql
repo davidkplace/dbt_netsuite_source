@@ -1,4 +1,4 @@
-{{ config(enabled=var('data_model') == 'netsuite') }}
+{{ config(enabled=var('data_model') == 'netsuite2') }}
 
 with base as (
 
