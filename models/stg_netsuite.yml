@@ -199,34 +199,38 @@ models:
   - name: stg_netsuite__expense_accounts
     description: Table detailing all expense accounts.
     columns:
-      - name: expense_account_id
+      - name: ACCOUNTID
         description: The unique identifier of the expense account.
         tests:
           - unique
           - not_null
-      - name: name
+      - name: ACCOUNTNAME
         description: The name of the expense account.
-      - name: parent_id
+      - name: PARENTID
         description: The expense account's associated parent account.
-      - name: account_number
+      - name: ACCOUNTNUMBER
         description: The account number associated with the expense account.
+      - name: ACCOUNTTYPE
+        description: Type of expense account
       - name: _fivetran_deleted
         description: Boolean created by Fivetran to indicate whether the record has been deleted.
 
   - name: stg_netsuite__income_accounts
     description: Table detailing all income accounts.
     columns:
-      - name: income_account_id
+      - name: ACCOUNTID
         description: The unique identifier of the income account.
         tests:
           - unique
           - not_null
-      - name: name
+      - name: ACCOUNTNAME
         description: The name of the income account.
-      - name: parent_id
+      - name: PARENTID
         description: The income account's associated parent account.
-      - name: account_number
+      - name: ACCOUNTNUMBER
         description: The account number associated with the income account.
+      - name: ACCOUNTTYPE
+        description: Type of income account
       - name: _fivetran_deleted
         description: Boolean created by Fivetran to indicate whether the record has been deleted.
 
