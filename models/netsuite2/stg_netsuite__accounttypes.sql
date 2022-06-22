@@ -3,7 +3,7 @@
 with base as (
 
     select * 
-    from {{ ref('stg_netsuite__accounttypess_tmp') }}
+    from {{ ref('stg_netsuite__accounttypes_tmp') }}
     where not coalesce(_fivetran_deleted, false)
 
 ),
