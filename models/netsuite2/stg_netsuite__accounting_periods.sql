@@ -37,6 +37,7 @@ final as (
         periodname as name,
         startdate as starting_at,
         enddate as ending_at,
+        YEAR(enddate) as year_id,
         closedondate as closed_at,
         isquarter = 'T' as is_quarter,
         isyear = 'T' as is_year,
